@@ -35,9 +35,26 @@
     button:hover {
         background: #1a2533;
     }
+     .notification {
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+        margin: 10px 0;
+        color: #fff;
+    }
+    .notification.success { background: #4caf50; }
+    .notification.error { background: #e53935; }
+</style>
 </style>
 
 <body>
     <h1>📚 Mini Library Management System</h1>
+<!-- Login Section -->
+<div id="loginSection" class="login-panel" style="display:none;">
+    <h2>Login</h2>
+    <input type="text" id="loginName" placeholder="Enter your name">
+    <button onclick="loginUser()">Login</button>
+    <div id="loginNotification" class="notification"></div>
+</div>
 </body>
 </html>
